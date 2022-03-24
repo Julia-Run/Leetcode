@@ -10,18 +10,20 @@ class Solution
 public:
     vector<int> twoSum(vector<int> &numbers, int target)
     {
-        int i = 0, j = numbers.size() - 1, sum = 0;
-        while (i < j)
+        int lo = 0, hi = numbers.size() - 1;
+        int sum;
+        // in same sorted arry , lo < hi;
+        while (lo < hi)
         {
-            sum = numbers[i] + numbers[j];
+            sum = numbers[lo] + numbers[hi];
             if (sum == target)
                 break;
-            else if (sum < target)
-                ++i;
+            else if (sum > target)
+                --hi;
             else
-                --j;
+                ++lo;
         }
-        return vector<int>{i + 1, j + 1};
+        return vector<int>{lo + 1, hi + 1};
     }
 };
 // @lc code=end

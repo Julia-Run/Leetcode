@@ -18,15 +18,13 @@ class Solution
 public:
     ListNode *detectCycle(ListNode *head)
     {
-        // 1. setting fast = 2slow. if not meet, no circle, return
-        // 2. if meet, have circle, set fast = slow, when meet, at the start of circle
+        // 01. fast = 2vt = x+c + fy, slow = vt = x+ c+sy
+        // -- vt = (f-s)y = x+c+sy -- slow current: x+c = ky
+        // 02. fast = vt -- fact to x, slow to x+c+x = x + ky, meet
         ListNode *fast = head, *slow = head;
         do
         {
-
-            if (fast == nullptr or fast->next == nullptr)
-                // 01 make sure fast = fast->next->next make sense;
-                // 02 one situation result;
+            if (fast == nullptr || fast->next == nullptr)
                 return nullptr;
             fast = fast->next->next;
             slow = slow->next;

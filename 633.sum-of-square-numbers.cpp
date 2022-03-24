@@ -10,17 +10,20 @@ class Solution
 public:
     bool judgeSquareSum(int c)
     {
-        long lo = 0, hi = sqrt(c);
+        // c,a,b >=0
+        // double ptrs; like find two elements in a sorted array.
+        long a = 0, b = sqrt(c);
         long sum;
-        while (lo <= int(sqrt(c)) && hi >= 0)
+        while (a <= b)
+        // as there is no rule saying that a can't equal b, so we use "<=";
         {
-            sum = lo * lo + hi * hi;
+            sum = a * a + b * b;
             if (sum == c)
                 return true;
             else if (sum > c)
-                --hi;
+                --b;
             else
-                ++lo;
+                ++a;
         }
         return false;
     }

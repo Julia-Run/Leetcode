@@ -10,6 +10,8 @@ class Solution
 public:
     bool validPalindrome(string s)
     {
+        // string, defalt order
+        // at most one char can be remove
         int lo = 0, hi = s.size() - 1;
         while (lo < hi)
         {
@@ -19,19 +21,26 @@ public:
                 --hi;
             }
             else
-                // one chance: check if this is aba;
-                return check(s, lo + 1, hi) || check(s, lo, hi - 1);
+            {
+                return check(s, lo, hi - 1) || check(s, lo + 1, hi);
+            }
         }
+        // lo==hi && never return before
         return true;
     }
     bool check(string s, int lo, int hi)
     {
         while (lo < hi)
         {
-            if (s[lo] != s[hi])
+            if (s[lo] == s[hi])
+            {
+                --hi;
+                ++lo;
+            }
+            else
+            {
                 return false;
-            ++lo;
-            --hi;
+            }
         }
         return true;
     }

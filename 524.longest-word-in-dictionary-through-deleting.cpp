@@ -10,36 +10,32 @@ class Solution
 public:
     string findLongestWord(string s, vector<string> &dictionary)
     {
-        // any char in dic[i] can be find in s[j]  -- current min = dic[i]
-        // by deleting some, but still ordered.
-        int maxIndex = -1, maxSize = 0; // to refresh min
-        for (int curr = 0; curr < dictionary.size(); ++curr)
+        // s>=1,d>=1
+        // only need to return string, no need to log index ...
+        // fro each string in dic: 01, if can be from s by deleting some chars
+        // key: all string have defalt order
+        string res = ""; // ==s, will fail
+        int max = 0;
+        for (auto d : dictionary)
         {
-            // 01. for each element in dic, check if it can get from s;
-            int si = 0, curri = 0;
-            while (si < s.size() && curri < dictionary[curr].size())
+            int di = 0, j = 0;
+            while (di < d.size() && j < s.size())
             {
-                if (s[si] == dictionary[curr][curri])
-                    ++curri;
-                ++si;
+                if (s[j] == d[di])
+                    ++di;
+                ++j;
             }
-            // 02. if it can get from s; refresh;
-            if (curri == dictionary[curr].size())
+            // if d can be from s, refresh
+            if (di == d.size())
             {
-                if (dictionary[curr].size() > maxSize)
+                if (d.size() > max || (d.size() == max && d < res))
                 {
-                    maxSize = dictionary[curr].size();
-                    maxIndex = curr;
+                    res = d;
+                    max = d.size();
                 }
-                else if (dictionary[curr].size() == maxSize)
-                {
-                    maxIndex = dictionary[curr] < dictionary[maxIndex] ? curr : maxIndex;
-                }
-
-                // longest length, smallest order;
             }
         }
-        return maxSize == 0 ? "" : dictionary[maxIndex];
+        return res;
     }
 };
 // @lc code=end

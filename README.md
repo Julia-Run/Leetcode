@@ -15,8 +15,8 @@ Here is a record of each problem, F represents "fail" at the first time submissi
 
 | Problem Index                                   |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |
 | :---------------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 167.two-sum-ii-input-array-is-sorted            |   F   |       |       |       |       |       |       |       |       |       |       |       |
-| 88.merge-sorted-array                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
+| 167.two-sum-ii-input-array-is-sorted            |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+| 88.merge-sorted-array                           |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
 | 142.linked-list-cycle-ii                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
 | 76.minimum-window-substring                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
 | 633.sum-of-square-numbers                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
