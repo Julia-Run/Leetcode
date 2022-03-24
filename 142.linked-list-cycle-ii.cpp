@@ -18,25 +18,19 @@ class Solution
 public:
     ListNode *detectCycle(ListNode *head)
     {
+        // 1. setting fast = 2slow. if not meet, no circle, return
+        // 2. if meet, have circle, set fast = slow, when meet, at the start of circle
         ListNode *fast = head, *slow = head;
-        // while (fast != slow)
-        // {
-        // fast,slow refers to head at the fitst beginning
-        //     if (!fast || !fast->next)
-        //         return nullptr;
-        //     fast = fast->next->next;
-        //     slow = slow->next;
-        // }
         do
         {
-            // do it once at the first beginning
-            // this time: don't have to satisfy fast!=slow;
-            if (!fast || !fast->next)
+
+            if (fast == nullptr or fast->next == nullptr)
+                // 01 make sure fast = fast->next->next make sense;
+                // 02 one situation result;
                 return nullptr;
             fast = fast->next->next;
             slow = slow->next;
         } while (fast != slow);
-
         fast = head;
         while (fast != slow)
         {
