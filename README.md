@@ -17,11 +17,11 @@ Here is a record of each problem, F represents "fail" at the first time submissi
 | :---------------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 167.two-sum-ii-input-array-is-sorted            |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
 | 88.merge-sorted-array                           |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
-| 142.linked-list-cycle-ii                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
-| 76.minimum-window-substring                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
-| 633.sum-of-square-numbers                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
-| 680.valid-palindrome-ii                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
-| 524.longest-word-in-dictionary-through-deleting |   F   |       |       |       |       |       |       |       |       |       |       |       |
+| 142.linked-list-cycle-ii                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+| 76.minimum-window-substring                     |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+| 633.sum-of-square-numbers                       |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+| 680.valid-palindrome-ii                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+| 524.longest-word-in-dictionary-through-deleting |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
 | 455.assign-cookies                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
 | 135.candy                                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
 | 435.non-overlapping-intervals                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
