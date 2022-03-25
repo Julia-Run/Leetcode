@@ -15,6 +15,7 @@ Here is a record of each problem, F represents "fail" at the first time submissi
 
 | Problem Index                                   |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |
 | :---------------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Chapter 3 Two Pointers                          | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 167.two-sum-ii-input-array-is-sorted            |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
 | 88.merge-sorted-array                           |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
 | 142.linked-list-cycle-ii                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
@@ -22,9 +23,10 @@ Here is a record of each problem, F represents "fail" at the first time submissi
 | 633.sum-of-square-numbers                       |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
 | 680.valid-palindrome-ii                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
 | 524.longest-word-in-dictionary-through-deleting |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
-| 455.assign-cookies                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
-| 135.candy                                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
-| 435.non-overlapping-intervals                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
+| Chapter 2 Greedy                                | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 455.assign-cookies                              |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+| 135.candy                                       |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+| 435.non-overlapping-intervals                   |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
 | 605.can-place-flowers                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
 |                                                 |       |       |       |       |       |       |       |       |       |       |       |       |
 

@@ -10,16 +10,19 @@ class Solution
 public:
     int findContentChildren(vector<int> &g, vector<int> &s)
     {
+        // at most one cookies. max numbers of childen content
+        // size: g >= 1, s >= 0
+        // rank g & s, diliver cookies
         sort(g.begin(), g.end());
         sort(s.begin(), s.end());
-        int gi = 0, si = 0;
-        while (gi < g.size() && si < s.size())
+        int i = 0, j = 0; // i for g, j for s
+        // find how many kid content
+        while (i < g.size() & j < s.size())
         {
-            if (g[gi] <= s[si])
-                ++gi;
-            ++si;
+            if (g[i]<=s[j]) ++i; 
+            ++j; 
         }
-        return gi;
+        return i; 
     }
 };
 // @lc code=end
