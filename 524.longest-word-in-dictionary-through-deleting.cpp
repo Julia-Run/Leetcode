@@ -10,32 +10,29 @@ class Solution
 public:
     string findLongestWord(string s, vector<string> &dictionary)
     {
-        // s>=1,d>=1
-        // only need to return string, no need to log index ...
-        // fro each string in dic: 01, if can be from s by deleting some chars
-        // key: all string have defalt order
-        string res = ""; // ==s, will fail
+        // size: s>=1; d>=1;
+        // out: longest || smallest order
         int max = 0;
-        for (auto d : dictionary)
+        string res = "";
+        for (auto &x : dictionary)
         {
-            int di = 0, j = 0;
-            while (di < d.size() && j < s.size())
+            int j = 0;
+            for (int i = 0; i < s.size() && j < x.size(); ++i)
             {
-                if (s[j] == d[di])
-                    ++di;
-                ++j;
+                if (s[i] == x[j])
+                    ++j; // move j only if we can get j from s;
             }
-            // if d can be from s, refresh
-            if (di == d.size())
+            // if x can get from s
+            if (j == x.size())
             {
-                if (d.size() > max || (d.size() == max && d < res))
+                if (x.size() > max || x.size() == max && x < res)
                 {
-                    res = d;
-                    max = d.size();
+                    res = x;
+                    max = x.size();
                 }
             }
         }
-        return res;
+        return res; 
     }
 };
 // @lc code=end

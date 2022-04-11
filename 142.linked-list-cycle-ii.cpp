@@ -18,17 +18,20 @@ class Solution
 public:
     ListNode *detectCycle(ListNode *head)
     {
-        // 01. fast = 2vt = x+c + fy, slow = vt = x+ c+sy
-        // -- vt = (f-s)y = x+c+sy -- slow current: x+c = ky
-        // 02. fast = vt -- fact to x, slow to x+c+x = x + ky, meet
+        // size >= 0; two pointers
+        // no cycle, return nullptr
         ListNode *fast = head, *slow = head;
         do
         {
             if (fast == nullptr || fast->next == nullptr)
+            { // in case head = nullptr;
+              // && make sure fast = fast->next->next; make sense;
                 return nullptr;
+            }
             fast = fast->next->next;
             slow = slow->next;
         } while (fast != slow);
+        // fast = slow;
         fast = head;
         while (fast != slow)
         {
