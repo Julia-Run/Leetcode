@@ -39,7 +39,3 @@ Here is a record of each problem, F represents "fail" at the first time submissi
 | 154. Find Minimum in Rotated Sorted Array II                |   F   |       |       |       |       |       |       |       |       |       |       |       |
 | 540.  Single Element in a Sorted Array                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
 | 4. Median of Two Sorted Arrays                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
-
-
-
-
