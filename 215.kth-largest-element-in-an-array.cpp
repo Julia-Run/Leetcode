@@ -13,7 +13,7 @@ public:
         int tar = nums.size() - k;
         int lo = 0, hi = nums.size();
         int mid;
-        while (lo + 1 < hi)
+        while (lo + 1 < hi) // >=2个元素
         {
             mid = rankedIndex(nums, lo, hi);
             if (mid == tar)
@@ -23,7 +23,7 @@ public:
             else
                 hi = mid;
         }
-        return nums[lo];
+        return nums[lo]; // lo + 1 = hi, one element left
     }
 
     int rankedIndex(vector<int> &x, int lo, int hi)
