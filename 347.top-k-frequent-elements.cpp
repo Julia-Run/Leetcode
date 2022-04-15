@@ -10,23 +10,25 @@ class Solution
 public:
     vector<int> topKFrequent(vector<int> &nums, int k)
     {
+        // nums>=1; 1<=k<=nums.size();
+        // find a vector<int> with kth largest elements
         map<int, int> m;
-        int maxf = 0;
-        for (int i : nums)
+        int maxF = 0;
+        for (auto x : nums)
         {
-            maxf = max(maxf, ++m[i]); // maxf --- to be used as len of a vector;
+            maxF = max(maxF, ++m[x]);
         }
 
-        vector<vector<int>> f2v(maxf + 1);
+        vector<vector<int>> chain(maxF + 1);
         for (auto &x : m)
         {
-            f2v[x.second].push_back(x.first);
+            chain[x.second].push_back(x.first);
         }
 
         vector<int> res;
-        for (int i = maxf; i >= 0 && res.size() < k; --i)
+        for (int i = maxF; i >= 0 && res.size() < k; --i)
         {
-            for (int x : f2v[i])
+            for (auto x : chain[i])
             {
                 res.push_back(x);
                 if (res.size() == k)
