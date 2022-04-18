@@ -11,23 +11,21 @@ public:
     string frequencySort(string s)
     {
         map<char, int> m;
-        int maxf = 0;
+        int maxF = 0;
         for (auto x : s)
-            maxf = max(maxf, ++m[x]);
+            maxF = max(maxF, ++m[x]);
 
-        vector<vector<char>> v(maxf + 1);
-        for (auto x : m)
-        {
-            v[x.second].push_back(x.first);
-        }
+        vector<vector<char>> basket(maxF + 1);
+        for (auto &x : m)
+            basket[x.second].push_back(x.first);
 
         string res = "";
-        for (int i = maxf; i >= 0; --i)
+        for (int i = maxF; i >= 0; --i)
         {
-            for (auto c : v[i])
+            for (auto x : basket[i])
             {
                 for (int j = i; j > 0; --j)
-                    res += c;
+                    res += x;
             }
         }
         return res;

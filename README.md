@@ -41,8 +41,13 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  024  | 4. Median of Two Sorted Arrays                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  025  | Chapter 5 Sorting                                           | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  |  026  | 215. Kth Largest Element in an Array                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  027  | 347. Top K Frequent Elements                                |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  028  | 451. Sort Characters By Frequency                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  027  | 347. Top K Frequent Elements                                |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  028  | 451. Sort Characters By Frequency                           |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  029  | 75. Sort Colors                                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  030  | 70. Climbing Stairs                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  031  | 198. House Robber                                           |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  032  | 413. Arithmetic Slices                                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  033  | 64. Minimum Path Sum                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
