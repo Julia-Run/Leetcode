@@ -48,6 +48,8 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  031  | 198. House Robber                                           |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  032  | 413. Arithmetic Slices                                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  033  | 64. Minimum Path Sum                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  034  | 542. 01 Matrix                                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  035  | 221. Maximal Square                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
