@@ -44,10 +44,11 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  027  | 347. Top K Frequent Elements                                |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  028  | 451. Sort Characters By Frequency                           |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  029  | 75. Sort Colors                                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |       | Chapter 6 Dynamic Programming                               | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  |  030  | 70. Climbing Stairs                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  031  | 198. House Robber                                           |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  032  | 413. Arithmetic Slices                                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  033  | 64. Minimum Path Sum                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  033  | 64. Minimum Path Sum                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  034  | 542. 01 Matrix                                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  035  | 221. Maximal Square                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
