@@ -50,7 +50,10 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  032  | 413. Arithmetic Slices                                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  033  | 64. Minimum Path Sum                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  034  | 542. 01 Matrix                                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  035  | 221. Maximal Square                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  035  | 221. Maximal Square                                         |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  036  | 91. Decode Ways                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  037  | 279. Perfect Squares                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+
 
 
 
