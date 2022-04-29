@@ -54,7 +54,7 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  036  | 91. Decode Ways                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  037  | 279. Perfect Squares                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  038  | 139. Word Break                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
-
+ |  039  | 300. Longest Increasing Subsequence                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
