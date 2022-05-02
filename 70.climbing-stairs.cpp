@@ -10,14 +10,13 @@ class Solution
 public:
     int climbStairs(int n)
     {
-        if (n < 3)
-            return n;
-        vector<int> res(n + 1, 1);
-        for (int i = 2; i < n + 1; ++i)
+        // 1--1, 2--2, 3--1+2, k--(k-1)+(k-2)
+        vector<int> dp(n + 1, 1);
+        for (int i = 2; i <= n; ++i)
         {
-            res[i] = res[i - 1] + res[i - 2];
+            dp[i] = dp[i-1]+ dp[i-2];
         }
-        return res[n];
+        return dp[n];
     }
 };
 // @lc code=end
