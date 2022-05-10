@@ -15,46 +15,46 @@ Here is a record of each problem, F represents "fail" at the first time submissi
 
  |  Sum  | Problem Index                                               |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |  P/F  |
  | :---: | :---------------------------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  001  | Chapter 3 Two Pointers                                      | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  002  | 167.two-sum-ii-input-array-is-sorted                        |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  003  | 88.merge-sorted-array                                       |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  004  | 142.linked-list-cycle-ii                                    |   F   |   F   |   F   |   P   |       |       |       |       |       |       |       |       |
- |  005  | 76.minimum-window-substring                                 |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  006  | 633.sum-of-square-numbers                                   |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  007  | 680.valid-palindrome-ii                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  008  | 524.longest-word-in-dictionary-through-deleting             |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  009  | Chapter 2 Greedy                                            | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  010  | 455.assign-cookies                                          |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  011  | 135.candy                                                   |   F   |   F   |   F   |   F   |       |       |       |       |       |       |       |       |
- |  012  | 435.non-overlapping-intervals                               |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  013  | 605.can-place-flowers                                       |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  014  | 763.Partition Labels                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  015  | 122. Best Time to Buy and Sell Stock II                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  016  | 655. Non-decreasing Array                                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  017  | 406. Queue Reconstruction by Height                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  018  | Chapter 4 Binary Search                                     | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  019  | 69. Sqrt(x)                                                 |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  020  | 34. Find First and Last Position of Element in Sorted Array |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  021  | 81. Search in Rotated Sorted Array II                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  022  | 154. Find Minimum in Rotated Sorted Array II                |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  023  | 540.  Single Element in a Sorted Array                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  024  | 4. Median of Two Sorted Arrays                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  025  | Chapter 5 Sorting                                           | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  026  | 215. Kth Largest Element in an Array                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  027  | 347. Top K Frequent Elements                                |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
- |  028  | 451. Sort Characters By Frequency                           |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  029  | 75. Sort Colors                                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |       | Chapter 3 Two Pointers                                      | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+ |  001  | 167.two-sum-ii-input-array-is-sorted                        |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  002  | 88.merge-sorted-array                                       |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  003  | 142.linked-list-cycle-ii                                    |   F   |   F   |   F   |   P   |       |       |       |       |       |       |       |       |
+ |  004  | 76.minimum-window-substring                                 |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  005  | 633.sum-of-square-numbers                                   |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  006  | 680.valid-palindrome-ii                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  007  | 524.longest-word-in-dictionary-through-deleting             |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |       | Chapter 2 Greedy                                            | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+ |  008  | 455.assign-cookies                                          |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  009  | 135.candy                                                   |   F   |   F   |   F   |   F   |       |       |       |       |       |       |       |       |
+ |  010  | 435.non-overlapping-intervals                               |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  011  | 605.can-place-flowers                                       |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  012  | 763.Partition Labels                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  013  | 122. Best Time to Buy and Sell Stock II                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  014  | 655. Non-decreasing Array                                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  015  | 406. Queue Reconstruction by Height                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |       | Chapter 4 Binary Search                                     | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+ |  016  | 69. Sqrt(x)                                                 |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  017  | 34. Find First and Last Position of Element in Sorted Array |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  018  | 81. Search in Rotated Sorted Array II                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  019  | 154. Find Minimum in Rotated Sorted Array II                |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  020  | 540.  Single Element in a Sorted Array                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  021  | 4. Median of Two Sorted Arrays                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |       | Chapter 5 Sorting                                           | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+ |  022  | 215. Kth Largest Element in an Array                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  023  | 347. Top K Frequent Elements                                |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  024  | 451. Sort Characters By Frequency                           |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  025  | 75. Sort Colors                                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |       | Chapter 6 Dynamic Programming                               | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  030  | 70. Climbing Stairs                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  031  | 198. House Robber                                           |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  032  | 413. Arithmetic Slices                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  033  | 64. Minimum Path Sum                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  034  | 542. 01 Matrix                                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  035  | 221. Maximal Square                                         |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  036  | 91. Decode Ways                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  037  | 279. Perfect Squares                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  038  | 139. Word Break                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  039  | 300. Longest Increasing Subsequence                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  026  | 70. Climbing Stairs                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  027  | 198. House Robber                                           |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  028  | 413. Arithmetic Slices                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  029  | 64. Minimum Path Sum                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  030  | 542. 01 Matrix                                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  031  | 221. Maximal Square                                         |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  032  | 91. Decode Ways                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  033  | 279. Perfect Squares                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  034  | 139. Word Break                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  035  | 300. Longest Increasing Subsequence                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
