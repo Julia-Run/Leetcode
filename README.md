@@ -44,7 +44,7 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  023  | 347. Top K Frequent Elements                                |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  024  | 451. Sort Characters By Frequency                           |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  025  | 75. Sort Colors                                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |       | Chapter 6 Dynamic Programming                               | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+ |       | Chapter 7 Dynamic Programming                               | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  |  026  | 70. Climbing Stairs                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  027  | 198. House Robber                                           |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  028  | 413. Arithmetic Slices                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
@@ -55,6 +55,14 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  033  | 279. Perfect Squares                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  034  | 139. Word Break                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  035  | 300. Longest Increasing Subsequence                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  036  | 1143. Longest Commom Subsequence (Medium)                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  037  | 416. Partition Equal Subset Sum                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  038  | 474. Ones and Zeroes                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  039  | 322. Coin Change                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  040  | 494. Target Sum                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+
+
+
 
 
 
