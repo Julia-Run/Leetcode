@@ -59,11 +59,27 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  037  | 416. Partition Equal Subset Sum                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  038  | 474. Ones and Zeroes                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  039  | 322. Coin Change                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  041  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  042  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  043  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  044  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  045  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  046  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  040  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  041  | 650. 2 Keys Keyboard                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  042  | 72. Edit Distance                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  043  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  044  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  047  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  048  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  049  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+
+
+
+
+
+
+
+
+
+
+
+
+
 

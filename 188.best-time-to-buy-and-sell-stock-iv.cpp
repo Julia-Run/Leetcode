@@ -29,7 +29,7 @@ public:
         return sell[k];
     }
     // 辅函数
-    int maxProfitUnlimited(vector<int> prices)
+    int maxProfitUnlimited(vector<int> prices) 
     {
         int maxProfit = 0;
         for (int i = 1; i < prices.size(); ++i)

@@ -5,6 +5,7 @@
  */
 
 // @lc code=start
+<<<<<<< HEAD
 class Solution
 {
 public:
@@ -47,3 +48,13 @@ public:
     }
 };
 // @lc code=end
+=======
+class Solution {
+public:
+    bool isMatch(string s, string p) {
+        
+    }
+};
+// @lc code=end
+
+>>>>>>> 33b4e1e49ee45d5dedca2b8a261d9fef269470b5
