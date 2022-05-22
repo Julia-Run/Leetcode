@@ -62,13 +62,13 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  040  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  041  | 650. 2 Keys Keyboard                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  042  | 72. Edit Distance                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  043  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  044  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  045  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  046  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  043  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  044  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  047  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  048  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
-
+ |  049  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
