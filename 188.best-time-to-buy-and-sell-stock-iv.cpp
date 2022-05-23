@@ -10,15 +10,20 @@ class Solution
 public:
     int maxProfit(int k, vector<int> &prices)
     {
-        int days = prices.size();
-        if (days < 2)
+        int n = prices.size();
+        if (n < 2)
             return 0;
-        if (k * 2 >= days)
-        {
-            return maxProfitUnlimited(prices);
+        if (2 * k >= n)
+        { // max profit in unlimited transactions;
+            int sum = 0;
+            for (int i = 1; i < n; ++i)
+                sum += max(0, prices[i] - prices[i - 1]);
+            return sum;
         }
+
+        // dp
         vector<int> buy(k + 1, INT_MIN), sell(k + 1, 0);
-        for (int i = 0; i < days; ++i)
+        for (int i = 0; i < n; ++i)
         {
             for (int j = 1; j <= k; ++j)
             {
@@ -27,19 +32,6 @@ public:
             }
         }
         return sell[k];
-    }
-    // 辅函数
-    int maxProfitUnlimited(vector<int> prices) 
-    {
-        int maxProfit = 0;
-        for (int i = 1; i < prices.size(); ++i)
-        {
-            if (prices[i] > prices[i - 1])
-            {
-                maxProfit += prices[i] - prices[i - 1];
-            }
-        }
-        return maxProfit;
     }
 };
 // @lc code=end
