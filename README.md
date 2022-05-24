@@ -66,9 +66,16 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  044  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  047  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  048  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  048  | 213. House Robber II                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  049  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  050  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  051  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  052  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  053  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  054  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  055  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  056  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
