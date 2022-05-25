@@ -68,9 +68,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  048  | 213. House Robber II                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  049  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  050  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  051  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  049  | 53. Maximum Subarray                                        |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  050  | 343. Integer Break                                          |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  051  | 583.   Delete Operation for Two Strings                     |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  052  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  053  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  054  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
