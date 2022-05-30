@@ -11,13 +11,14 @@ public:
     int maxProfit(vector<int> &prices)
     {
         int n = prices.size();
-        int buy = INT_MAX, dp = 0;
+        int res = 0, buy = INT_MIN, sell = 0;
         for (int i = 0; i < n; ++i)
         {
-            buy = min(buy, prices[i]);
-            dp = max(dp, prices[i] - buy); 
+            buy = max(buy, -prices[i]);
+            sell = buy + prices[i];
+            res = max(res, sell);
         }
-        return dp;
+        return res;
     }
 };
 // @lc code=end
