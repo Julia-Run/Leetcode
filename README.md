@@ -45,15 +45,15 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  024  | 451. Sort Characters By Frequency                           |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  025  | 75. Sort Colors                                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |       | Chapter 7 Dynamic Programming                               | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  026  | 70. Climbing Stairs                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  027  | 198. House Robber                                           |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  028  | 413. Arithmetic Slices                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  029  | 64. Minimum Path Sum                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  030  | 542. 01 Matrix                                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  031  | 221. Maximal Square                                         |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  032  | 91. Decode Ways                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  033  | 279. Perfect Squares                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  034  | 139. Word Break                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  026  | 70. Climbing Stairs                                         |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  027  | 198. House Robber                                           |   P   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  028  | 413. Arithmetic Slices                                      |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  029  | 64. Minimum Path Sum                                        |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  030  | 542. 01 Matrix                                              |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  031  | 221. Maximal Square                                         |   F   |   F   |   P   |   P   |       |       |       |       |       |       |       |       |
+ |  032  | 91. Decode Ways                                             |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  033  | 279. Perfect Squares                                        |   F   |   P   |   F   |   P   |       |       |       |       |       |       |       |       |
+ |  034  | 139. Word Break                                             |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  035  | 300. Longest Increasing Subsequence                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  036  | 1143. Longest Commom Subsequence (Medium)                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  037  | 416. Partition Equal Subset Sum                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
@@ -64,9 +64,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  042  | 72. Edit Distance                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  043  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  044  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  048  | 213. House Robber II                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  049  | 53. Maximum Subarray                                        |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  050  | 343. Integer Break                                          |   P   |       |       |       |       |       |       |       |       |       |       |       |
@@ -74,8 +74,8 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  052  | 646. Maximum Length of Pair Chain                           |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  053  | 376. Wiggle Subsequence                                     |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  054  | 714. Best Time to Buy and Sell Stock with Transaction Fee   |   P   |       |       |       |       |       |       |       |       |       |       |       |
- |  055  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
- |  056  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  055  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  056  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
