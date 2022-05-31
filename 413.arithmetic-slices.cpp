@@ -10,16 +10,17 @@ class Solution
 public:
     int numberOfArithmeticSlices(vector<int> &nums)
     {
-        if (nums.size() < 3)
-            return 0;
+        // max nums of arrays with dx is equal; min: 3
+        // why dp?
+        // 3-1, 4-2, 5-0, 6-1, 7-2, 8-3;
+        // dp[i-1] + 1;
         int n = nums.size();
-        // dp[i]---an array end at current nums[i];
-        // 0--0,1--0,2--if...1(0+1), 3--if...2(1+1), ...
-        // currently n>=3;
+        if (n < 3)
+            return 0;
         vector<int> dp(n, 0);
         for (int i = 2; i < n; ++i)
         {
-            if (nums[i] - nums[i - 1] == nums[i - 1] - nums[i - 2])
+            if (nums[i] + nums[i - 2] == nums[i - 1] * 2)
                 dp[i] = dp[i - 1] + 1;
         }
         return accumulate(dp.begin(), dp.end(), 0);

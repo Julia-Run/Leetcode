@@ -10,20 +10,23 @@ class Solution
 public:
     bool wordBreak(string s, vector<string> &wordDict)
     {
-        vector<bool> f(s.size() + 1, false);
-        f[0] = true;
-        for (int i = 1; i <= s.size(); ++i)
+        int n = s.size();
+        vector<bool> dp(n + 1, false);
+        dp[0] = true;
+        for (int i = 1; i <= n; ++i)
         {
-            for (int j = i - 1; j >= 0; --j) // start: j, length: i-j; find from small length;
+            for (auto &c : wordDict)
             {
-                if (f[j] && find(wordDict.begin(), wordDict.end(), s.substr(j, i - j)) != wordDict.end())
-                {
-                    f[i] = true;
-                    break;
-                }
+                int le = c.size();
+                // if (le <= i)
+                //     dp[i] = dp[i - le] && s.substr(i - le, le) == c;
+                // if (dp[i])
+                //     break;
+                if (le <= i && s.substr(i - le, le) == c)
+                    dp[i] = dp[i] || dp[i-le];
             }
         }
-        return f[s.size()];
+        return dp[n];
     }
 };
 // @lc code=end
