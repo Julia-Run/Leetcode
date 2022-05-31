@@ -7,21 +7,21 @@ public:
         if (n < 2)
             return 0;
         int r, l, res = 0, pre = 0;
-        bool loop = false;
+        int online = 0;
         for (int i = 1; i < n; ++i)
         {
             if (nums[i - 1] > nums[i])
             { // init
-                loop = true;
-                r = nums[i - 1];
+                r = max(nums[i - 1], online);
                 l = nums[i];
+                pre = max(pre, res);
                 res = 0;
             }
-            if (loop && nums[i] >= l && nums[i] < r)
+            if (nums[i] >= l && nums[i] < r)
                 ++res;
             else if (nums[i] >= r) // new loop
             {
-                loop = false;
+                online = nums[i];
                 pre = max(pre, res);
             }
         }
