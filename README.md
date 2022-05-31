@@ -64,9 +64,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  042  | 72. Edit Distance                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  043  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  044  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  048  | 213. House Robber II                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  049  | 53. Maximum Subarray                                        |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  050  | 343. Integer Break                                          |   P   |       |       |       |       |       |       |       |       |       |       |       |
@@ -74,8 +74,8 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  052  | 646. Maximum Length of Pair Chain                           |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  053  | 376. Wiggle Subsequence                                     |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  054  | 714. Best Time to Buy and Sell Stock with Transaction Fee   |   P   |       |       |       |       |       |       |       |       |       |       |       |
- |  055  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  056  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  055  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  056  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
 
 
 
