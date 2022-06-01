@@ -10,25 +10,25 @@ class Solution
 public:
     bool canPartition(vector<int> &nums)
     {
-        if (nums.size() < 2)
+        int n = nums.size();
+        if (n < 2)
             return false;
+
+        // 1d, dp, sum = half;
         int sum = accumulate(nums.begin(), nums.end(), 0);
-        if (sum % 2)
+        if (sum % 2 == 1)
             return false;
-        int tar = sum / 2, n = nums.size();
-        vector<bool> dp(tar + 1, false);
+        // bag;
+        int t = sum / 2;
+        vector<bool> dp(t + 1, false);
         dp[0] = true;
-        for (int i = 0; i < n; ++i)
+        for (int i = 1; i <= n; ++i)
         {
-            int v = nums[i];
-            for (int j = tar; j - v >= 0; --j)
-            {
-                if (dp[j - v])
-                    dp[j] = true;
-                // dp[j] = dp[j - v] || dp[j];
-            }
+            int cur = nums[i - 1];
+            for (int j = t; j >= cur; --j) // sequence;
+                dp[j] = dp[j - cur] || dp[j];
         }
-        return dp[tar];
+        return dp[t];
     }
 };
 // @lc code=end

@@ -10,17 +10,17 @@ class Solution
 public:
     int coinChange(vector<int> &coins, int amount)
     {
-        vector<int> dp(amount + 1, INT_MAX - 1);
+        // dp, bag, coints -- dp[amount]
+        int n = coins.size();
+        vector<int> dp(amount + 1, amount + 1);
         dp[0] = 0;
-        for (int i = 0; i < coins.size(); ++i)
+        for (int i = 1; i <= n; ++i)
         {
-            int v = coins[i];
-            for (int j = v; j <= amount; ++j)
-            {
-                dp[j] = min(dp[j], 1 + dp[j - v]);
-            }
+            int cur = coins[i - 1];
+            for (int j = cur; j <= amount; ++j)
+                dp[j] = min(dp[j - cur] + 1, dp[j]);
         }
-        return dp[amount] > amount ? -1 : dp[amount];
+        return dp[amount] < amount + 1 ? dp[amount] : -1;
     }
 };
 // @lc code=end

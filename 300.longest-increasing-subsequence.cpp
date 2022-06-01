@@ -5,6 +5,25 @@
  */
 
 // @lc code=start
+// class Solution
+// {
+// public:
+//     int lengthOfLIS(vector<int> &nums)
+//     {
+//         int n = nums.size();
+//         vector<int> dp(n, 1);
+//         int res = 0;
+//         for (int i = 1; i < n; ++i)
+//         {
+//             int cur = nums[i]; // current nums element;
+//             for (int j = 0; j < i; ++i)
+//                 if (nums[j] < cur)
+//                     dp[i] = max(dp[j] + 1, dp[i]);
+//             res = max(res, dp[i]);
+//         }
+//         return res;
+//     }
+// };
 class Solution
 {
 public:
@@ -15,13 +34,11 @@ public:
         dp.push_back(nums[0]);
         for (int i = 1; i < n; ++i)
         {
-            if (dp.back() < nums[i])
+            auto c = lower_bound(dp.begin(), dp.end(), nums[i]);
+            if (c == dp.end())
                 dp.push_back(nums[i]);
             else
-            {
-                auto x = lower_bound(dp.begin(), dp.end(), nums[i]); 
-                *x = nums[i];
-            }
+                *c = nums[i];
         }
         return dp.size();
     }

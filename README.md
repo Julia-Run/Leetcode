@@ -54,11 +54,11 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  032  | 91. Decode Ways                                             |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  033  | 279. Perfect Squares                                        |   F   |   P   |   F   |   P   |       |       |       |       |       |       |       |       |
  |  034  | 139. Word Break                                             |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  035  | 300. Longest Increasing Subsequence                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  036  | 1143. Longest Commom Subsequence (Medium)                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  037  | 416. Partition Equal Subset Sum                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  038  | 474. Ones and Zeroes                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  039  | 322. Coin Change                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  035  | 300. Longest Increasing Subsequence                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  036  | 1143. Longest Commom Subsequence (Medium)                   |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  037  | 416. Partition Equal Subset Sum                             |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  038  | 474. Ones and Zeroes                                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  039  | 322. Coin Change                                            |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  040  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  041  | 650. 2 Keys Keyboard                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  042  | 72. Edit Distance                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |

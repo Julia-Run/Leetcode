@@ -10,31 +10,37 @@ class Solution
 public:
     int findMaxForm(vector<string> &strs, int m, int n)
     {
-        // array: strs. array weight: 0,1; W: m, n; max: subsets;
-        vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0)); // init
-        for (auto &s : strs)
+        // 2d, bag, how to relate? -- dp[1][0]
+        // with strs increase, refresh dp;
+        int sum = strs.size();
+        vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
+        for (int k = 0; k < sum; ++k)
         {
-            // count o and a in s;
-            int c0 = s.size(), c1 = 0;
-            for (auto x : s)
+            vector<int> cur = help(strs[k]);
+            int c0 = cur[0], c1 = cur[1];
+            for (int i = m; i >= c0; --i)
             {
-                if (x == '1')
-                {
-                    --c0;
-                    ++c1;
-                }
-            }
-
-            // refresh dp
-            for (int i = m; i - c0 >= 0; --i)
-            {
-                for (int j = n; j - c1 >= 0; --j)
+                for (int j = n; j >= c1; --j)
                 {
                     dp[i][j] = max(dp[i][j], 1 + dp[i - c0][j - c1]);
                 }
             }
         }
         return dp[m][n];
+    }
+    vector<int> help(string &s)
+    {
+        int n = s.size();
+        int c0 = n, c1 = 0;
+        for (auto c : s)
+        {
+            if (c == '1')
+            {
+                --c0;
+                ++c1;
+            }
+        }
+        return vector<int>{c0, c1};
     }
 };
 // @lc code=end

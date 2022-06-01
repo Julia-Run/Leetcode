@@ -11,6 +11,10 @@ public:
     int longestCommonSubsequence(string text1, string text2)
     {
         int m = text1.size(), n = text2.size();
+        // 2 string, -- max common letters -- why dp;
+        // --2d, related; how?
+        // i==j, dp+1;
+        // i!=j, max(i-1, j-1)?
         vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
         for (int i = 1; i <= m; ++i)
         {
