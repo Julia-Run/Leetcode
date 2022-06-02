@@ -60,10 +60,10 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  038  | 474. Ones and Zeroes                                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  039  | 322. Coin Change                                            |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  040  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  041  | 650. 2 Keys Keyboard                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  042  | 72. Edit Distance                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  041  | 650. 2 Keys Keyboard                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  042  | 72. Edit Distance                                           |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  043  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  044  | 10. Regular Expression Matching                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  044  | 10. Regular Expression Matching                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |       |       |       |       |       |       |       |       |       |       |       |

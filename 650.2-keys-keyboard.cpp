@@ -10,16 +10,22 @@ class Solution
 public:
     int minSteps(int n)
     {
+        // A -- n A
+        // copy all, paste
+        // dp -- using previous state
         vector<int> dp(n + 1, 0);
         for (int i = 2; i <= n; ++i)
         {
             dp[i] = i;
-            for (int j = 2; j * j <= i; ++j)
+            for (int j = 2; 2 * j <= i; ++j)
             {
                 if (i % j == 0)
                 {
-                    int m = i/j;  
-                    dp[i] = dp[m] + j; // j = j-1+1
+                    // copy j + past: i/j-1 -- 1+i/j-1
+                    // copy i/j, past: j-1;  --1+j-1
+                    dp[i] = dp[i / j] + j;
+                    // dp[i] = dp[j] + i/j;  // not right
+                    // dp[i] = min(dp[j] + i / j, dp[i]); // 2 * j <= i, no break
                     break;
                 }
             }
