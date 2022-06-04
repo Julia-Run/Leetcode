@@ -49,7 +49,8 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  027  | 198. House Robber                                           |   P   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  028  | 413. Arithmetic Slices                                      |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  029  | 64. Minimum Path Sum                                        |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
- |  030  | 542. 01 Matrix                                              |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  030  | 542. 01 Matrix                                              |   F   |   F   |       |       |       |
+ |       |                                                             |       |       |       |       |
  |  031  | 221. Maximal Square                                         |   F   |   F   |   P   |   P   |       |       |       |       |       |       |       |       |
  |  032  | 91. Decode Ways                                             |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  033  | 279. Perfect Squares                                        |   F   |   P   |   F   |   P   |       |       |       |       |       |       |       |       |
@@ -63,10 +64,10 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  041  | 650. 2 Keys Keyboard                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  042  | 72. Edit Distance                                           |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  043  | 494. Target Sum                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  044  | 10. Regular Expression Matching                             |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  044  | 10. Regular Expression Matching                             |   F   |   F   |   F   |       |       |       |       |       |       |       |       |       |
+ |  045  | 121. Best Time to Buy and Sell Stock                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  048  | 213. House Robber II                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  049  | 53. Maximum Subarray                                        |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  050  | 343. Integer Break                                          |   P   |       |       |       |       |       |       |       |       |       |       |       |
