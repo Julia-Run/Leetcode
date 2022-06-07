@@ -10,24 +10,28 @@ class Solution
 public:
     int rob(vector<int> &nums)
     {
+        // dp -- change; rob 1th, no last; / no 1st, last
+        // dp[i] = dp[i-1] || dp[i-2] + cur;  // start from 2;
         int n = nums.size();
-        if (n == 1)
+        if (n < 2)
             return nums[0];
         else if (n == 2)
             return max(nums[0], nums[1]);
         else
-            return max(he(nums, 0, n - 1), he(nums, 1, n));
+            return max(help(nums, 0, n - 1), help(nums, 1, n));
     }
-    int he(vector<int> &bag, int s, int e)
+
+    int help(vector<int> &nums, int s, int e)
     {
-        int left = bag[s], mid = max(bag[s], bag[s + 1]);
-        for (int i = s + 2; i < e; ++i)
+        vector<int> dp(e + 1, 0);
+        // 0--0, 1--0, s = 1, 1--n;
+        // 0--0, 1--*, s = 0,--n-1;
+        dp[s + 1] = nums[s];
+        for (int i = s + 2; i <= e; ++i)
         {
-            int temp = mid;
-            mid = max(mid, left + bag[i]);
-            left = temp;
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i - 1]);
         }
-        return mid;
+        return dp[e];
     }
 };
 // @lc code=end

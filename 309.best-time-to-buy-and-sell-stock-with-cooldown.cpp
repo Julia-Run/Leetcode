@@ -20,10 +20,11 @@ public:
         for (int i = 1; i <= n; ++i)
         {
             int j = i - 1;
-            //  remain max profit after buy;
+            //  buy after cool, or not buy (increasing); 
             dp[i][0] = max(dp[i - 1][0], dp[i - 1][2] - prices[j]);
-            // sell;
+            // sell for cirtainty; if increasing, sell increase; if decreasing, 
             dp[i][1] = dp[i][0] + prices[j];
+            // cool after i-1 sell or cool after i-1 calm; 
             dp[i][2] = max(dp[i - 1][1], dp[i - 1][2]);
         }
         return max(dp[n][1], dp[n][2]);
