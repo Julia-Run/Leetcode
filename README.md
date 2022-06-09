@@ -69,11 +69,11 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  046  | 188. Best Time to Buy and Sell Stock IV                     |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  047  | 309. Best Time to Buy and Sell Stock with Cooldown          |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  048  | 213. House Robber II                                        |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  049  | 53. Maximum Subarray                                        |   P   |       |       |       |       |       |       |       |       |       |       |       |
- |  050  | 343. Integer Break                                          |   P   |       |       |       |       |       |       |       |       |       |       |       |
- |  051  | 583.   Delete Operation for Two Strings                     |   P   |       |       |       |       |       |       |       |       |       |       |       |
- |  052  | 646. Maximum Length of Pair Chain                           |   P   |       |       |       |       |       |       |       |       |       |       |       |
- |  053  | 376. Wiggle Subsequence                                     |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  049  | 53. Maximum Subarray                                        |   P   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  050  | 343. Integer Break                                          |   P   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  051  | 583. Delete Operation for Two Strings                       |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  052  | 646. Maximum Length of Pair Chain                           |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  053  | 376. Wiggle Subsequence                                     |   P   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  054  | 714. Best Time to Buy and Sell Stock with Transaction Fee   |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  055  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  |  056  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
