@@ -15,22 +15,24 @@ public:
         for (int i = 0; i < m; ++i)
         {
             for (int j = 0; j < n; ++j)
+            {
                 ans = max(ans, dfs(grid, i, j));
+            }
         }
         return ans;
     }
 
-    int dfs(vector<vector<int>> &grid, int row, int cul)
+    int dfs(vector<vector<int>> &grid, int ri, int cj)
     {
         int m = grid.size(), n = grid[0].size();
-        if (row >= 0 && row < m && cul >= 0 && cul < n)
+        if (ri >= 0 && ri < m && cj >= 0 && cj < n)
         {
-            if (grid[row][cul] == 0)
+            if (grid[ri][cj] == 0)
                 return 0;
             else
             {
-                grid[row][cul] = 0;
-                return 1 + dfs(grid, row + 1, cul) + dfs(grid, row, cul + 1) + dfs(grid, row - 1, cul) + dfs(grid, row, cul - 1);
+                grid[ri][cj] = 0;
+                return 1 + dfs(grid, ri + 1, cj) + dfs(grid, ri - 1, cj) + dfs(grid, ri, cj + 1) + dfs(grid, ri, cj - 1);
             }
         }
         else

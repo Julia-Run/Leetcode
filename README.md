@@ -75,9 +75,14 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  052  | 646. Maximum Length of Pair Chain                           |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  053  | 376. Wiggle Subsequence                                     |   P   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  054  | 714. Best Time to Buy and Sell Stock with Transaction Fee   |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  055  | 695. Max Area of Island                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  056  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
-
+ |       | Chapter 6 Searching                                         | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+ |  055  | 695. Max Area of Island                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  056  | 547. Number of Provinces                                    |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  057  | 417. Pacific Atlantic Water Flow                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  058  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  059  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  060  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ 
 
 
 
