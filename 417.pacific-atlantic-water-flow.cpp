@@ -5,72 +5,99 @@
  */
 
 // @lc code=start
-static const int dirs[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
 class Solution
 {
 public:
-    vector<vector<int>> heights;
-
-    void dfs(int row, int col, vector<vector<bool>> &ocean)
-    {
-        int m = ocean.size();
-        int n = ocean[0].size();
-        if (ocean[row][col])
-        {
-            return;
-        }
-        ocean[row][col] = true;
-        for (int i = 0; i < 4; i++)
-        {
-            int newRow = row + dirs[i][0], newCol = col + dirs[i][1];
-            if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n && heights[newRow][newCol] >= heights[row][col])
-            {
-                dfs(newRow, newCol, ocean);
-            }
-        }
-    }
-
     vector<vector<int>> pacificAtlantic(vector<vector<int>> &heights)
     {
-        this->heights = heights;
-        int m = heights.size();
-        int n = heights[0].size();
-        vector<vector<bool>> pacific(m, vector<bool>(n, false));
-        vector<vector<bool>> atlantic(m, vector<bool>(n, false));
-
-        for (int i = 0; i < m; i++)
+        int m = heights.size(), n = heights[0].size();
+        vector<vector<bool>> p(m, vector<bool>(n, false)), a(m, vector<bool>(n, false));
+        // start from four edges to decide if reachable;
+        for (int i = 0; i < m; ++i)
         {
-            dfs(i, 0, pacific);
+            dfs(heights, i, 0, p);     // left;
+            dfs(heights, i, n - 1, a); // right
         }
-        for (int j = 1; j < n; j++)
+        for (int j = 0; j < n; ++j)
         {
-            dfs(0, j, pacific);
+            dfs(heights, 0, j, p);     // top
+            dfs(heights, m - 1, j, a); // bottom
         }
-        for (int i = 0; i < m; i++)
+        vector<vector<int>> ans;
+        for (int i = 0; i < m; ++i)
         {
-            dfs(i, n - 1, atlantic);
-        }
-        for (int j = 0; j < n - 1; j++)
-        {
-            dfs(m - 1, j, atlantic);
-        }
-        vector<vector<int>> result;
-        for (int i = 0; i < m; i++)
-        {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < n; ++j)
             {
-                if (pacific[i][j] && atlantic[i][j])
-                {
-                    vector<int> cell;
-                    cell.emplace_back(i);
-                    cell.emplace_back(j);
-                    result.emplace_back(cell);
-                }
+                if (p[i][j] && a[i][j])
+                    ans.push_back({i, j});
             }
         }
-        return result;
+        return ans;
     }
+
+    // for p or a, if reacheable: true, else: false (unchanged)
+    void dfs(vector<vector<int>> &h, int i, int j, vector<vector<bool>> &reach)
+    {
+        int m = h.size(), n = h[0].size();
+        // if (i < 0 || i >= m || j < 0 || j >= n)
+        //     return;
+        if (reach[i][j])
+            return; // key!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! otherwise, overflow.
+        reach[i][j] = true;
+        vector<vector<int>> dx = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        for (int k = 0; k < 4; ++k)
+        {
+            int x = i + dx[k][0], y = j + dx[k][1];
+            if (x >= 0 && x < m && y >= 0 && y < n && h[x][y] >= h[i][j])
+                dfs(h, x, y, reach);
+        }
+    }
+
+    // vector<vector<int>> pacificAtlantic(vector<vector<int>> &heights)
+    // {
+    //     int m = heights.size(), n = heights[0].size();
+    //     vector<vector<bool>> p(m, vector<bool>(n, false)), a(m, vector<bool>(n, false));
+    //     // start from four edges to decide if reachable;
+    //     for (int i = 0; i < m; ++i)
+    //     {
+    //         dfs(heights, i, 0, 0, p);     // left;
+    //         dfs(heights, i, n - 1, 0, a); // right
+    //     }
+    //     for (int j = 0; j < n; ++j)
+    //     {
+    //         dfs(heights, 0, j, 0, p);     // top
+    //         dfs(heights, m - 1, j, 0, a); // bottom
+    //     }
+    //     vector<vector<int>> ans;
+    //     for (int i = 0; i < m; ++i)
+    //     {
+    //         for (int j = 0; j < n; ++j)
+    //         {
+    //             if (p[i][j] && a[i][j])
+    //                 ans.push_back({i, j});
+    //         }
+    //     }
+    //     return ans;
+    // }
+
+    // void dfs(vector<vector<int>> &h, int i, int j, int val, vector<vector<bool>> &reach)
+    // {
+    //     int m = h.size(), n = h[0].size();
+    //     if (i < 0 || i >= m || j < 0 || j >= n)
+    //         return;
+    //     if (reach[i][j])
+    //         return;
+    //     if (h[i][j] < val)
+    //         return;
+    //     reach[i][j] = true;
+    //     vector<vector<int>> dx = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    //     for (int k = 0; k < 4; ++k)
+    //     {
+    //         int x = i + dx[k][0], y = j + dx[k][1];
+    //         dfs(h, x, y, h[i][j], reach);
+    //     }
+    // }
 };
 
 // @lc code=end
