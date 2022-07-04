@@ -10,33 +10,28 @@ class Solution
 public:
     int maxAreaOfIsland(vector<vector<int>> &grid)
     {
+        //   local union max value -- four direction
         int m = grid.size(), n = grid[0].size();
-        int ans = 0;
+        int res = 0;
         for (int i = 0; i < m; ++i)
         {
             for (int j = 0; j < n; ++j)
             {
-                ans = max(ans, dfs(grid, i, j));
+                res = max(res, dfs(grid, i, j));
             }
         }
-        return ans;
+        return res;
     }
 
-    int dfs(vector<vector<int>> &grid, int ri, int cj)
+    int dfs(vector<vector<int>> &map, int i, int j)
     {
-        int m = grid.size(), n = grid[0].size();
-        if (ri >= 0 && ri < m && cj >= 0 && cj < n)
-        {
-            if (grid[ri][cj] == 0)
-                return 0;
-            else
-            {
-                grid[ri][cj] = 0;
-                return 1 + dfs(grid, ri + 1, cj) + dfs(grid, ri - 1, cj) + dfs(grid, ri, cj + 1) + dfs(grid, ri, cj - 1);
-            }
-        }
-        else
+        int m = map.size(), n = map[0].size();
+        if (i < 0 || i >= m || j < 0 || j >= n)
             return 0;
+        if (map[i][j] == 0)
+            return 0;
+        map[i][j] = 0;
+        return 1 + dfs(map, i + 1, j) + dfs(map, i - 1, j) + dfs(map, i, j + 1) + dfs(map, i, j - 1);
     }
 };
 // @lc code=end

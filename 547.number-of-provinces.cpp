@@ -10,27 +10,31 @@ class Solution
 public:
     int findCircleNum(vector<vector<int>> &isConnected)
     {
+        // how many unions;
         int m = isConnected.size();
-        int ans = 0;
         vector<bool> marked(m, false);
+        int count = 0;
         for (int i = 0; i < m; ++i)
         {
             if (!marked[i])
             {
-                dfs(isConnected, marked, i, m);
-                ++ans;
+                dfs(isConnected, marked, i, m); //
+                ++count;
             }
         }
-        return ans;
+        return count;
     }
 
-    void dfs(vector<vector<int>> &isConnected, vector<bool> &marked, int x, int n)
+    void dfs(vector<vector<int>> &isConnected, vector<bool> &marked, int i, int m)
     {
-        marked[x] = true;
-        for (int i = 0; i < n; ++i)
+        if (marked[i])
+            return;
+        marked[i] = true;
+        int n = isConnected[i].size();
+        for (int j = 0; j < n; ++j)
         {
-            if (isConnected[x][i] == 1 && !marked[i])
-                dfs(isConnected, marked, i, n);
+            if (isConnected[i][j] == 1)
+                dfs(isConnected, marked, j, m);
         }
     }
 };

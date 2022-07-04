@@ -76,12 +76,19 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  053  | 376. Wiggle Subsequence                                     |   P   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  054  | 714. Best Time to Buy and Sell Stock with Transaction Fee   |   P   |   P   |       |       |       |       |       |       |       |       |       |       |
  |       | Chapter 6 Searching                                         | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  055  | 695. Max Area of Island                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  056  | 547. Number of Provinces                                    |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  057  | 417. Pacific Atlantic Water Flow                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  058  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
- |  059  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
- |  060  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  055  | 695. Max Area of Island                                     |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
+ |  056  | 547. Number of Provinces                                    |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  057  | 417. Pacific Atlantic Water Flow                            |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  058  | 46. Permutations                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  059  | 77. Combinations                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  060  | 79. Word Search                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  061  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  062  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  063  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  064  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  065  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  066  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ 
  
 
 
