@@ -10,52 +10,44 @@ class Solution
 public:
     vector<vector<string>> solveNQueens(int n)
     {
-        vector<int> colPos(n, -1);
+        vector<int> pos(n, -1); // rank question
         vector<vector<string>> ans;
-        dfs(ans, colPos, n, 0);
+        dfs(ans, pos, n, 0);
         return ans;
     }
 
-    void dfs(vector<vector<string>> &ans, vector<int> &colPos, int n, int row)
+    void dfs(vector<vector<string>> &ans, vector<int> &pos, int n, int row)
     {
+        // return if row==n;
         if (row == n)
         {
-            // run to the end; update ans and return
             vector<string> temp;
             for (int i = 0; i < n; ++i)
             {
                 string s(n, '.');
-                if (colPos[i] >= 0)
-                    s[colPos[i]] = 'Q';
+                if (pos[i] >= 0)
+                    s[pos[i]] = 'Q';
                 temp.emplace_back(s);
             }
-            // for (int i = 0; i < n; ++i)
-            // {
-            //     string s(n, '.');
-            //     for (int j = 0; j < n; ++j)
-            //     {
-            //         if (j == colPos[i])
-            //             s[j] = 'Q';
-            //     }
-            //     temp.emplace_back(s);
-            // }
             ans.emplace_back(temp);
             return;
         }
-
-        // deal with current row and dive into row+1
+        // deal with current row and deep into row+1;
         for (int i = 0; i < n; ++i)
         {
-            colPos[row] = i;
+            // change
+            pos[row] = i;
             bool good = true;
             for (int j = 0; j < row; ++j)
             {
-                if (colPos[j] == colPos[row] || abs(j - row) == abs(colPos[j] - colPos[row]))
+                if (pos[j] == pos[row] || abs(j - row) == abs(pos[j] - pos[row]))
                     good = false;
             }
+            // if go to nexyu row
             if (good)
-                dfs(ans, colPos, n, row + 1);
-            colPos[row] = -1;
+                dfs(ans, pos, n, row + 1);
+            // go back or do nothing
+            pos[row] = -1;
         }
     }
 };

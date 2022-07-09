@@ -82,9 +82,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  058  | 46. Permutations                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  059  | 77. Combinations                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  060  | 79. Word Search                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  061  | 51. N-Queens                                                |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  062  | 130. Surrounded Regions                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  063  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  061  | 51. N-Queens                                                |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  062  | 130. Surrounded Regions                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  063  | 934. Shortest Bridge                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  064  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  |  065  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  |  066  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
