@@ -85,7 +85,7 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  061  | 51. N-Queens                                                |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
  |  062  | 130. Surrounded Regions                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  063  | 934. Shortest Bridge                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  064  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  064  | 257.  Binary Tree Paths                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  065  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  |  066  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  
