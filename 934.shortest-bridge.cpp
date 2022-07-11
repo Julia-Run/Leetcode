@@ -17,19 +17,19 @@ public:
         {
             for (int j = 0; j < n && !find; ++j)
             {
-                if (grid[i][j])
+                if (grid[i][j] == 1)
                 {
-                    dfs(q, grid, i, j);
+                    dfs(grid, q, i, j);
                     find = true;
                 }
             }
         }
 
         int step = 0;
-        while (!q.empty()) // fifo
+        while (!q.empty())
         {
-            int s = q.size(); // layer 1
-            while (s--)       //
+            int s = q.size();
+            while (s--)
             {
                 auto [r, c] = q.front();
                 q.pop();
@@ -37,35 +37,37 @@ public:
                 for (int k = 0; k < 4; ++k)
                 {
                     int rn = r + delta[k], cn = c + delta[k + 1];
-                    if (rn >= 0 && rn < m && cn >= 0 && cn < n)
+                    // effective
+                    if (rn >= 0 && cn >= 0 && rn < m && cn < n)
                     {
                         if (grid[rn][cn] == 1)
-                            return step;
-                        else if (grid[rn][cn] == 0)
+                            return step;            // find;
+                        else if (grid[rn][cn] == 0) //  add to next step
                         {
                             grid[rn][cn] = 2;
                             q.push({rn, cn});
-                        }
+                        } // if == 2, continue;
                     }
                 }
             }
-            ++step;
+            ++step; // next layer;
         }
         return -1;
     }
 
-    void dfs(queue<pair<int, int>> &q, vector<vector<int>> &grid, int i, int j)
+    void dfs(vector<vector<int>> &grid, queue<pair<int, int>> &q, int i, int j)
     {
-        if (i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size())
+        int m = grid.size(), n = grid[0].size();
+        if (i < 0 || j < 0 || i >= m || j >= n)
             return;
         if (grid[i][j] != 1)
             return;
         grid[i][j] = 2;
         q.push({i, j});
-        dfs(q, grid, i + 1, j);
-        dfs(q, grid, i - 1, j);
-        dfs(q, grid, i, j + 1);
-        dfs(q, grid, i, j - 1);
+        dfs(grid, q, i + 1, j);
+        dfs(grid, q, i - 1, j);
+        dfs(grid, q, i, j + 1);
+        dfs(grid, q, i, j - 1);
     }
 };
 // @lc code=end

@@ -84,9 +84,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  060  | 79. Word Search                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  061  | 51. N-Queens                                                |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
  |  062  | 130. Surrounded Regions                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  063  | 934. Shortest Bridge                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  063  | 934. Shortest Bridge                                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  064  | 257.  Binary Tree Paths                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  065  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  065  | 126. Word Ladder II                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  066  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  
  
