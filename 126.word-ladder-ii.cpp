@@ -10,79 +10,76 @@ class Solution
 public:
     vector<vector<string>> findLadders(string beginWord, string endWord, vector<string> &wordList)
     {
-        // return min paths; BF; log edgeTo;
-        unordered_set dict(wordList.begin(), wordList.end()); // repeated;
+        unordered_set<string> dict(wordList.begin(), wordList.end()); // words not visited;
         vector<vector<string>> res;
         if (!dict.count(endWord))
             return res;
         dict.erase(beginWord);
         dict.erase(endWord);
 
-        // find min path  fron s to end in dict;
-        unordered_map<string, int> steps{{beginWord, 0}};
-        unordered_map<string, vector<string>> edgeTo;
+        unordered_map<string, int> layers{{beginWord, 0}};
+        unordered_map<string, vector<string>> parents;
+
         queue<string> q;
-        q.push(beginWord);
+        q.push(beginWord); // words I have visited;
+        int layer = 0;
         bool found = false;
-        int step = 0;
         while (!q.empty() && !found)
         {
             int len = q.size();
-            while (len--)
+            while (len--) // current layer;
             {
                 string s = q.front();
                 q.pop();
-                // find where s leads to;
-                string temp = s;
-                for (int i = 0; i < temp.size(); ++i)
+                for (int i = 0; i < s.size(); ++i)
                 {
+                    // for every char in s -- have 26-1 times to replace;
+                    string t = s;
                     for (int j = 0; j < 26; ++j)
                     {
                         char x = 'a' + j;
-                        temp[i] = x; // change one char
-                        if (temp == endWord)
+                        t[i] = x;
+                        if (t == endWord)
                         {
-                            found = true;              // found state change
-                            edgeTo[temp].push_back(s); // necessary! endWord not in dict
+                            found = true;
+                            parents[t].emplace_back(s); // endWord is not in dict;
                         }
-                        if (dict.count(temp))
+                        if (dict.count(t))
                         {
-                            dict.erase(temp);
-                            q.push(temp); // next layer
-                            edgeTo[temp].push_back(s);
-                            steps[temp] = steps.at(s) + 1;
+                            q.push(t);
+                            dict.erase(t);
+                            parents[t].emplace_back(s);
+                            layers[t] = layers.at(s) + 1;
                         }
-                        else if (steps.count(temp) && step + 1 == steps.at(temp))
-                        { // temp has been deleted from dict; but i can still go change to this word;
-                            edgeTo[temp].push_back(s);
+                        else if (layers.count(t) && layer + 1 == layers.at(t))
+                        {
+                            parents[t].emplace_back(s); // t can also teansform from t
                         }
                     }
-                    temp = s;
                 }
             }
-            ++step;
+            ++layer;
         }
-        // found:
-        if (found)
+        if (found) // dfs to output
         {
-            vector<string> curr{endWord};
-            dfs(endWord, beginWord, curr, res, edgeTo);
+            vector<string> temp{endWord};
+            dfs(endWord, beginWord, res, temp, parents);
         }
         return res;
     }
 
-    void dfs(string word, string s, vector<string> &curr, vector<vector<string>> &res, unordered_map<string, vector<string>> &edgeTo)
+    void dfs(string curr, string s, vector<vector<string>> &res, vector<string> &temp, unordered_map<string, vector<string>> &parents)
     {
-        if (word == s)
+        if (curr == s)
         {
-            res.emplace_back(vector<string>(curr.rbegin(), curr.rend()));
+            res.emplace_back(vector<string>(temp.rbegin(), temp.rend()));
             return;
         }
-        for (string x : edgeTo[word])
+        for (string x : parents[curr])
         {
-            curr.emplace_back(x);
-            dfs(x, s, curr, res, edgeTo);
-            curr.pop_back();
+            temp.emplace_back(x);
+            dfs(x, s, res, temp, parents);
+            temp.pop_back();
         }
     }
 };

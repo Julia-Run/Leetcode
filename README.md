@@ -86,8 +86,16 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  062  | 130. Surrounded Regions                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  063  | 934. Shortest Bridge                                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  064  | 257.  Binary Tree Paths                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  065  | 126. Word Ladder II                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  066  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  065  | 126. Word Ladder II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  066  | 47. Permutations II                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  | 40. Combination Sum II                                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  
  
 
