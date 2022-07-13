@@ -87,15 +87,15 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  063  | 934. Shortest Bridge                                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  064  | 257.  Binary Tree Paths                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  065  | 126. Word Ladder II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  066  | 47. Permutations II                                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  | 40. Combination Sum II                                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  067  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  066  | 47. Permutations II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  067  | 40. Combination Sum II                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  068  | 310. Minimum Height Trees                                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  069  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  070  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  071  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  072  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  073  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  074  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  
  
 

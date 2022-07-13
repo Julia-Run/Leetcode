@@ -10,30 +10,33 @@ class Solution
 public:
     vector<vector<int>> combinationSum2(vector<int> &candidates, int target)
     {
-        vector<vector<int>> res;
-        vector<int> temp;
         sort(candidates.begin(), candidates.end());
+        vector<vector<int>> res;
         if (accumulate(candidates.begin(), candidates.end(), 0) < target)
             return res;
-        dfs(candidates, res, temp, 0, target);
+        int curr = 0, layer = 0;
+        vector<int> temp;
+        dfs(candidates, res, temp, curr, layer, target);
         return res;
     }
 
-    void dfs(vector<int> &candidates, vector<vector<int>> &res, vector<int> &temp, int k, int t)
+    void dfs(vector<int> &all, vector<vector<int>> &res, vector<int> &temp, int curr, int layer, int t)
     {
-        if (temp.size() > candidates.size() || t < 0)
-            return; // out of range
+        // if (temp.size() > all.size() || t < 0)
+        //     return;  // size() condition won't happen
+        if (t < 0)
+            return;
         if (t == 0)
         {
             res.emplace_back(temp);
-            return; // find result;
+            return;
         }
-        for (int i = k; i < candidates.size(); ++i)
+        for (int i = curr; i < all.size(); ++i)
         {
-            if (i > k && candidates[i] == candidates[i - 1]) // remove duplicated elements in same layer;
+            if (i > curr && all[i] == all[i - 1])
                 continue;
-            temp.emplace_back(candidates[i]);
-            dfs(candidates, res, temp, i + 1, t - candidates[i]);
+            temp.emplace_back(all[i]); // 3,1a,1b,2; 3,1b,1c,2;
+            dfs(all, res, temp, i + 1, layer + 1, t - all[i]);
             temp.pop_back();
         }
     }

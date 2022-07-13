@@ -10,34 +10,31 @@ class Solution
 public:
     vector<vector<int>> permuteUnique(vector<int> &nums)
     {
-        // ranking; reppeated
-        int n = nums.size();
         sort(nums.begin(), nums.end());
         vector<vector<int>> res;
-        vector<int> vis(n, 0);
         vector<int> temp;
-        dfs(nums, res, vis, temp, 0, n);
+        vector<int> pending(nums.size(), 0);
+        dfs(nums, res, pending, temp);
         return res;
     }
 
-    void dfs(vector<int> &nums, vector<vector<int>> &res, vector<int> &vis, vector<int> &temp, int layer, int n)
+    void dfs(vector<int> &nums, vector<vector<int>> &res, vector<int> &pending, vector<int> &temp)
     {
-        if (layer == n)
+        if (temp.size() == nums.size())
         {
             res.emplace_back(temp);
             return;
         }
-
-        for (int i = 0; i < n; ++i)
+        for (int i = 0; i < nums.size(); ++i)
         {
-            if (vis[i])
+            if (pending[i])
                 continue;
-            if (i > 0 && nums[i] == nums[i - 1] && !vis[i - 1]) // vis[i-1] already done
+            if (i > 0 && nums[i] == nums[i - 1] && !pending[i - 1])
                 continue;
-            vis[i] = 1;
-            temp.push_back(nums[i]);
-            dfs(nums, res, vis, temp, layer + 1, n);
-            vis[i] = 0;
+            pending[i] = 1;
+            temp.emplace_back(nums[i]);
+            dfs(nums, res, pending, temp);
+            pending[i] = 0;
             temp.pop_back();
         }
     }
