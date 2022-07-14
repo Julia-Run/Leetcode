@@ -66,64 +66,60 @@ class Solution
 public:
     vector<int> findMinHeightTrees(int n, vector<vector<int>> &edges)
     {
-        // 突破点：将所有只有一个邻居的节点视为叶子节点
-        // 假设只有一个邻居的节点不是叶子节点，则必是根节点，不可能为其他节点，其他节点的邻居都不只1个，如果让其做根节点，则必然会增加树的深度
-        // 建图
         if (n == 1)
             return {0};
-        if (n == 2)
-            return {0, 1};
-        vector<vector<int>> g(n);  // edges
-        vector<int> degrees(n, 0); // how many edges; for leaves, degree = 1;
-        vector<bool> visited(n, false);
-        for (auto e : edges)
+        vector<vector<int>> adj(n, vector<int>{});
+        vector<int> degree(n, 0);
+        for (vector<int> e : edges)
         {
-            g[e[0]].push_back(e[1]);
-            g[e[1]].push_back(e[0]);
-            ++degrees[e[0]];
-            ++degrees[e[1]];
+            adj[e[0]].emplace_back(e[1]);
+            adj[e[1]].emplace_back(e[0]);
+            ++degree[e[0]];
+            ++degree[e[1]];
         }
+
         queue<int> q;
-        for (int i = 0; i < n; ++i)
+        vector<bool> vis(n, false);
+        for (int v = 0; v < n; ++v)
         {
-            if (degrees[i] == 1)
+            if (degree[v] == 1)
             {
-                q.push(i);
-                visited[i] = true;
+                q.push(v);
+                vis[v] = true;
             }
-        } // init q to keep leaves in it;
-        queue<int> ans = q;
+        }
+
+        queue<int> pre;
         while (!q.empty())
         {
-            queue<int> nq;
-            while (!q.empty())
+            pre = q;
+            int s = q.size();
+            while (s--)
             {
-                int node = q.front();
+                int v = q.front();
                 q.pop();
-                for (auto nx_node : g[node]) // leaves
+                for (int w : adj[v])
                 {
-                    if (!visited[nx_node]) // go up
+                    --degree[w];
+                    if (!vis[w])
                     {
-                        --degrees[nx_node]; // move previous level leaves;
-                        if (degrees[nx_node] == 1)
+                        if (degree[w] == 1)
                         {
-                            visited[nx_node] = true;
-                            nq.push(nx_node);
+                            q.push(w);
+                            vis[w] = true;
                         }
                     }
                 }
             }
-            q = nq;                         // keep one layer nodes;
-            ans = nq.size() > 0 ? nq : ans; // if nq is empty; previous layer is the answer;
         }
 
-        vector<int> res;
-        while (!ans.empty())
+        vector<int> ans;
+        while (!pre.empty())
         {
-            res.push_back(ans.front());
-            ans.pop();
+            ans.emplace_back(pre.front());
+            pre.pop();
         }
-        return res;
+        return ans;
     }
 };
 // @lc code=end

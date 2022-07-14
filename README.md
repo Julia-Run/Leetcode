@@ -89,8 +89,8 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  065  | 126. Word Ladder II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  066  | 47. Permutations II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  067  | 40. Combination Sum II                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  068  | 310. Minimum Height Trees                                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  069  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  068  | 310. Minimum Height Trees                                   |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
+ |  069  | 37. Sudoku Solver                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  070  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  071  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  072  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
