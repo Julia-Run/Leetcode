@@ -10,36 +10,36 @@ class Solution
 public:
     void solveSudoku(vector<vector<char>> &board)
     {
-
-        vector<vector<char>> temp(9, vector<char>(9, '.'));
-        vector<pair<int, int>> bag;
+        vector<pair<int, int>> q;
         for (int i = 0; i < 9; ++i)
         {
             for (int j = 0; j < 9; ++j)
             {
                 if (board[i][j] == '.')
-                    bag.push_back({i, j});
+                    q.emplace_back({i, j});
             }
         }
-        dfs(board, bag, 0);
+        dfs(board, q, 0);
     }
 
-    bool dfs(vector<vector<char>> &all, vector<pair<int, int>> &bag, int k)
+    bool dfs(vector<vector<char>> &all, vector<pair<int, int>> &q, int k)
     {
-        if (k == bag.size())
+        if (k == q.size())
             return true;
 
         for (int i = 0; i < 9; ++i)
         {
-            auto [r, c] = bag[k];
             char v = '1' + i;
+            auto [r, c] = q[k];
             all[r][c] = v;
             bool good = true;
+            // row col
             for (int j = 0; j < 9; ++j)
             {
-                if ((j != c && all[r][j] == v) || (j != r && all[j][c] == v))
+                if ((j != r && all[j][c] == v) || (j != c && all[r][j] == v))
                     good = false;
             }
+            // box
             int posx = r / 3 * 3, posy = c / 3 * 3;
             for (int x = posx; x < posx + 3; ++x)
             {
@@ -49,7 +49,8 @@ public:
                         good = false;
                 }
             }
-            if (good && dfs(all, bag, k + 1))
+
+            if (good && dfs(all, q, k + 1))
                 return true;
             all[r][c] = '.';
         }

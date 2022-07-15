@@ -5,49 +5,82 @@
  */
 
 // @lc code=start
+// class Solution
+// {
+// public:
+//     vector<vector<string>> solveNQueens(int n)
+//     {
+//         vector<vector<string>> res;
+//         vector<int> row(n, -1);
+//         vector<bool> col(n, false), dg(2 * n - 1, false), udg(2 * n - 1, false);
+//         dfs(res, row, col, dg, udg, 0, n);
+//         return res;
+//     }
+
+//     void dfs(vector<vector<string>> &res, vector<int> &row, vector<bool> &col, vector<bool> &dg, vector<bool> &udg, int k, int n)
+//     {
+//         if (k == n)
+//         {
+//             vector<string> temp;
+//             for (int i = 0; i < n; ++i)
+//             {
+//                 string s(n, '.');
+//                 if (row[i] >= 0)
+//                     s[row[i]] = 'Q';
+//                 temp.push_back(s);
+//             }
+//             res.push_back(temp);
+//             return;
+//         }
+
+//         for (int i = 0; i < n; ++i)
+//         {
+//             if (!col[i] && !dg[k + i] && !udg[k - i + n])
+//             {
+//                 row[k] = i;
+//                 col[i] = dg[k + i] = udg[k - i + n] = true;
+//                 dfs(res, row, col, dg, udg, k + 1, n);
+//                 col[i] = dg[k + i] = udg[k - i + n] = false;
+//                 row[k] = -1;
+//             }
+//         }
+//     }
+// };
 class Solution
 {
 public:
     vector<vector<string>> solveNQueens(int n)
     {
-        vector<int> pos(n, -1); // rank question
-        vector<vector<string>> ans;
-        dfs(ans, pos, n, 0);
-        return ans;
+        vector<string> temp(n, string(n, '.'));
+        vector<vector<string>> res;
+        vector<bool> row(n, false), col(n, false), dg(2 * n - 1, false), udg(2 * n - 1, false);
+        dfs(res, temp, row, col, dg, udg, 0, 0, n, 0);
+        return res;
     }
 
-    void dfs(vector<vector<string>> &ans, vector<int> &pos, int n, int row)
+    void dfs(vector<vector<string>> &res, vector<string> &temp, vector<bool> &row, vector<bool> &col, vector<bool> &dg, vector<bool> &udg, int x, int y, int n, int s)
     {
-        // return if row==n;
-        if (row == n)
+        if (y == n)
         {
-            vector<string> temp;
-            for (int i = 0; i < n; ++i)
-            {
-                string s(n, '.');
-                if (pos[i] >= 0)
-                    s[pos[i]] = 'Q';
-                temp.emplace_back(s);
-            }
-            ans.emplace_back(temp);
+            y = 0;
+            x++;
+        }
+        if (x == n)
+        {
+            if (s == n)
+                res.push_back(temp);
             return;
         }
-        // deal with current row and deep into row+1;
-        for (int i = 0; i < n; ++i)
+        // not put queen 
+        dfs(res, temp, row, col, dg, udg, x, y + 1, n, s);
+        // put queen 
+        if (!row[x] && !col[y] && !dg[x + y] && !udg[x - y + n])
         {
-            // change
-            pos[row] = i;
-            bool good = true;
-            for (int j = 0; j < row; ++j)
-            {
-                if (pos[j] == pos[row] || abs(j - row) == abs(pos[j] - pos[row]))
-                    good = false;
-            }
-            // if go to nexyu row
-            if (good)
-                dfs(ans, pos, n, row + 1);
-            // go back or do nothing
-            pos[row] = -1;
+            temp[x][y] = 'Q';
+            row[x] = col[y] = dg[x + y] = udg[x - y + n] = true;
+            dfs(res, temp, row, col, dg, udg, x, y + 1, n, s + 1);
+            row[x] = col[y] = dg[x + y] = udg[x - y + n] = false;
+            temp[x][y] = '.';
         }
     }
 };
