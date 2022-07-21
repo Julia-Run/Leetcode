@@ -79,23 +79,23 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  055  | 695. Max Area of Island                                     |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  056  | 547. Number of Provinces                                    |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
  |  057  | 417. Pacific Atlantic Water Flow                            |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
- |  058  | 46. Permutations                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  058  | 46. Permutations                                            |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  059  | 77. Combinations                                            |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  060  | 79. Word Search                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  061  | 51. N-Queens                                                |   F   |   F   |   P   |       |       |       |       |       |       |       |       |       |
+ |  061  | 51. N-Queens                                                |   F   |   F   |   P   |   P   |       |       |       |       |       |       |       |       |
  |  062  | 130. Surrounded Regions                                     |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  063  | 934. Shortest Bridge                                        |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
  |  064  | 257.  Binary Tree Paths                                     |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  065  | 126. Word Ladder II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
- |  066  | 47. Permutations II                                         |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  066  | 47. Permutations II                                         |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  067  | 40. Combination Sum II                                      |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  068  | 310. Minimum Height Trees                                   |   F   |   F   |       |       |       |       |       |       |       |       |       |       |
- |  069  | 37. Sudoku Solver                                           |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  070  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  071  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  072  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  073  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  074  |                                                             |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  069  | 37. Sudoku Solver                                           |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  070  | 1926. Nearest Exit from Entrance in Maze                    |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  071  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  072  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  073  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  074  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
  
  
 

@@ -10,32 +10,34 @@ class Solution
 public:
     vector<vector<int>> permuteUnique(vector<int> &nums)
     {
-        sort(nums.begin(), nums.end());
+        // ranking; dfs;
         vector<vector<int>> res;
-        vector<int> temp;
-        vector<int> pending(nums.size(), 0);
-        dfs(nums, res, pending, temp);
+        vector<int> path;
+        vector<bool> marked(nums.size(), false);
+        int u = 0;
+        sort(nums.begin(), nums.end());
+        dfs(u, path, marked, res, nums);
         return res;
     }
-
-    void dfs(vector<int> &nums, vector<vector<int>> &res, vector<int> &pending, vector<int> &temp)
+    void dfs(int u, vector<int> &path, vector<bool> &marked, vector<vector<int>> &res, vector<int> &nums)
     {
-        if (temp.size() == nums.size())
+        if (u == nums.size())
         {
-            res.emplace_back(temp);
+            res.push_back(path);
             return;
         }
         for (int i = 0; i < nums.size(); ++i)
         {
-            if (pending[i])
-                continue;
-            if (i > 0 && nums[i] == nums[i - 1] && !pending[i - 1])
-                continue;
-            pending[i] = 1;
-            temp.emplace_back(nums[i]);
-            dfs(nums, res, pending, temp);
-            pending[i] = 0;
-            temp.pop_back();
+            if (!marked[i])
+            {
+                if (i > 0 && nums[i] == nums[i - 1] && !marked[i - 1])
+                    continue;
+                path.push_back(nums[i]);
+                marked[i] = true;
+                dfs(u + 1, path, marked, res, nums);
+                path.pop_back();
+                marked[i] = false;
+            }
         }
     }
 };

@@ -10,24 +10,32 @@ class Solution
 public:
     vector<vector<int>> permute(vector<int> &nums)
     {
-        int m = nums.size();
-        vector<vector<int>> ans;
-        dfs(nums, 0, 0, m, ans);
-        return ans;
+        int n = nums.size(); // total layers;
+        vector<vector<int>> res;
+        vector<bool> used(n, false);
+        vector<int> path(n, 0);
+        int u = 0;
+        dfs(u, path, used, nums, res);
+        return res;
     }
 
-    void dfs(vector<int> &nums, int layer, int startIndex, int m, vector<vector<int>> &ans)
+    void dfs(int u, vector<int> &path, vector<bool> &used, vector<int> &nums, vector<vector<int>> &res)
     {
-        if (layer == m)
+        if (u == nums.size())
         {
-            ans.emplace_back(nums);
+            res.emplace_back(path);
             return;
         }
-        for (int j = startIndex; j < m; ++j)
+
+        for (int i = 0; i < nums.size(); ++i)
         {
-            swap(nums[j], nums[layer]);
-            dfs(nums, layer + 1, startIndex + 1, m, ans);
-            swap(nums[layer], nums[j]);
+            if (!used[i])
+            {
+                used[i] = true;
+                path[u] = nums[i];
+                dfs(u + 1, path, used, nums, res);
+                used[i] = false;
+            }
         }
     }
 };

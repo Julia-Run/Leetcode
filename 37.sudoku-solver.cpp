@@ -11,50 +11,98 @@ public:
     void solveSudoku(vector<vector<char>> &board)
     {
         vector<pair<int, int>> q;
+        vector<vector<bool>> row(9, vector<bool>(9, false)), col(9, vector<bool>(9, false)), box(9, vector<bool>(9, false));
         for (int i = 0; i < 9; ++i)
         {
             for (int j = 0; j < 9; ++j)
             {
-                if (board[i][j] == '.')
-                    q.emplace_back({i, j});
+                if (board[i][j] != '.')
+                {
+                    int k = board[i][j] - '1';
+                    row[i][k] = true;
+                    col[j][k] = true;
+                    box[i / 3 * 3 + j / 3 % 3][k] = true;
+                }
+                else
+                    q.push_back({i, j});
             }
         }
-        dfs(board, q, 0);
+        bool solved = false;
+        dfs(0, board, row, col, box, q, solved);
     }
 
-    bool dfs(vector<vector<char>> &all, vector<pair<int, int>> &q, int k)
+    void dfs(int k, vector<vector<char>> &board, vector<vector<bool>> &row, vector<vector<bool>> &col, vector<vector<bool>> &box, vector<pair<int, int>> &q, bool &solved)
     {
         if (k == q.size())
-            return true;
-
-        for (int i = 0; i < 9; ++i)
         {
-            char v = '1' + i;
-            auto [r, c] = q[k];
-            all[r][c] = v;
-            bool good = true;
-            // row col
-            for (int j = 0; j < 9; ++j)
-            {
-                if ((j != r && all[j][c] == v) || (j != c && all[r][j] == v))
-                    good = false;
-            }
-            // box
-            int posx = r / 3 * 3, posy = c / 3 * 3;
-            for (int x = posx; x < posx + 3; ++x)
-            {
-                for (int y = posy; y < posy + 3; ++y)
-                {
-                    if (x != r && y != c && all[x][y] == v)
-                        good = false;
-                }
-            }
-
-            if (good && dfs(all, q, k + 1))
-                return true;
-            all[r][c] = '.';
+            solved = true;
+            return;
         }
-        return false;
+
+        auto [x, y] = q[k];
+        for (int val = 0; val < 9 && !solved; ++val)
+        {
+            if (!row[x][val] && !col[y][val] && !box[x / 3 * 3 + y / 3 % 3][val])
+            {
+                row[x][val] = col[y][val] = box[x / 3 * 3 + y / 3 % 3][val] = true;
+                board[x][y] = '1' + val;
+                dfs(k + 1, board, row, col, box, q, solved);
+                row[x][val] = col[y][val] = box[x / 3 * 3 + y / 3 % 3][val] = false;
+                // board[x][y] = '.';
+            }
+        }
     }
 };
+// class Solution
+// {
+// public:
+//     void solveSudoku(vector<vector<char>> &board)
+//     {
+//         vector<vector<bool>> row(9, vector<bool>(9, false)), col(9, vector<bool>(9, false)), box(9, vector<bool>(9, false));
+//         for (int i = 0; i < 9; ++i)
+//         {
+//             for (int j = 0; j < 9; ++j)
+//             {
+//                 if (board[i][j] != '.')
+//                 {
+//                     int k = board[i][j] - '1';
+//                     row[i][k] = true;
+//                     col[j][k] = true;
+//                     box[i / 3 * 3 + j / 3 % 3][k] = true;
+//                 }
+//             }
+//         }
+//         bool solved = false;
+//         dfs(0, 0, board, row, col, box, solved);
+//     }
+
+//     void dfs(int x, int y, vector<vector<char>> &board, vector<vector<bool>> &row, vector<vector<bool>> &col, vector<vector<bool>> &box, bool &solved)
+//     {
+//         if (y == 9)
+//         {
+//             y = 0;
+//             x++;
+//             if (x == 9)
+//             {
+//                 solved = true;
+//                 return;
+//             }
+//         }
+
+//         if (board[x][y] != '.')
+//             dfs(x, y + 1, board, row, col, box, solved); // wrong!
+
+//         for (int val = 0; val < 9 && !solved; ++val)
+//         {
+//             if (!row[x][val] && !col[y][val] && !box[x / 3 * 3 + y / 3 % 3][val])
+//             {
+//                 row[x][val] = col[y][val] = box[x / 3 * 3 + y / 3 % 3][val] = true;
+//                 board[x][y] = '1' + val;
+//                 dfs(x, y + 1, board, row, col, box, solved);
+//                 row[x][val] = col[y][val] = box[x / 3 * 3 + y / 3 % 3][val] = false;
+//                 // board[x][y] = '.';
+//             }
+//         }
+//     }
+// };
 // @lc code=end
