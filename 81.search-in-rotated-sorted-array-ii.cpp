@@ -10,34 +10,31 @@ class Solution
 public:
     bool search(vector<int> &nums, int target)
     {
-        // size: k>=1, int
-        // diffrent situation; binary search
-        int lo = 0, hi = nums.size(); // [ );
-        int mid;
-        while (lo < hi) // when while ends, lo=hi;
+        int n = nums.size();
+        int l = 0, r = n - 1;
+        while (l < r)
         {
-            mid = lo + (hi - lo) / 2;
-            if (nums[mid] == target)
-                return true;
-            if (nums[lo] < nums[mid]) // hi = mid;
+            int mid = l + (r - l) / 2;
+            if (nums[mid]==target) return true;
+            if (nums[l] < nums[mid])
             {
-                if (nums[lo] <= target && target < nums[mid])
-                    hi = mid; // normal BS
+                if (nums[mid] > target && target >= nums[l])
+                    r = mid;
                 else
-                    lo = mid + 1;
+                    l = mid + 1;
             }
-            else if (nums[lo] > nums[mid])
+            else if (nums[l] > nums[mid])
             {
-                if (nums[mid] < target && target <= nums[hi - 1])
-                    lo = mid + 1;
+                if (nums[mid] < target && target <= nums[r])
+                    l = mid + 1;
                 else
-                    hi = mid;
+                    r = mid;
             }
             else
-                ++lo;
+                ++l;
         }
-        return false;
-        // key : target must be [nums[lo], nums[hi])
+        return nums[l] == target;
+        // return false; 
     }
 };
 // @lc code=end

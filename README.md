@@ -33,9 +33,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  014  | 655. Non-decreasing Array                                   |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  015  | 406. Queue Reconstruction by Height                         |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |       | Chapter 4 Binary Search                                     | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- |  016  | 69. Sqrt(x)                                                 |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
+ |  016  | 69. Sqrt(x)                                                 |   F   |   P   |   P   |       |       |       |       |       |       |       |       |       |
  |  017  | 34. Find First and Last Position of Element in Sorted Array |   F   |       |       |       |       |       |       |       |       |       |       |       |
- |  018  | 81. Search in Rotated Sorted Array II                       |   F   |       |       |       |       |       |       |       |       |       |       |       |
+ |  018  | 81. Search in Rotated Sorted Array II                       |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  019  | 154. Find Minimum in Rotated Sorted Array II                |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  020  | 540.  Single Element in a Sorted Array                      |   F   |       |       |       |       |       |       |       |       |       |       |       |
  |  021  | 4. Median of Two Sorted Arrays                              |   F   |       |       |       |       |       |       |       |       |       |       |       |
