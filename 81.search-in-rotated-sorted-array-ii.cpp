@@ -15,26 +15,26 @@ public:
         while (l < r)
         {
             int mid = l + (r - l) / 2;
-            if (nums[mid]==target) return true;
-            if (nums[l] < nums[mid])
+            if (nums[mid] == target)
+                return true;
+            if (nums[mid] > nums[l]) // [l, mid] increasing
             {
                 if (nums[mid] > target && target >= nums[l])
-                    r = mid;
+                    r = mid; // exactely in this
                 else
                     l = mid + 1;
             }
-            else if (nums[l] > nums[mid])
+            else if (nums[mid] < nums[l]) // [mid, r] increasing;
             {
-                if (nums[mid] < target && target <= nums[r])
-                    l = mid + 1;
-                else
-                    r = mid;
+                if (nums[mid] < target && target <= nums[r]) l = mid+1;
+                else r = mid; 
             }
-            else
-                ++l;
+            else  // l=mid or r = mid = l; 
+            // so we do l++ to push forward to update mid; 
+                l++;
         }
         return nums[l] == target;
-        // return false; 
+        // return false;
     }
 };
 // @lc code=end

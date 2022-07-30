@@ -5,6 +5,7 @@
  */
 
 // @lc code=start
+
 class Solution
 {
 public:
@@ -20,17 +21,14 @@ public:
         if (nums[n - 1] != nums[n - 2])
             return nums[n - 1];
         // BS
-        int lo = 0, hi = n, mid;
+        int lo = 0, hi = n - 1, mid;
         while (lo < hi)
         {
             mid = lo + (hi - lo) / 2;
             // if (mid % 2 == 1 && nums[mid] == nums[mid - 1] || mid % 2 == 0 && nums[mid] == nums[mid + 1])
             if (nums[mid] == nums[mid ^ 1])
                 lo = mid + 1;
-            // else if (mid % 2 == 1 && nums[mid] == nums[mid + 1] || mid % 2 == 0 && nums[mid] == nums[mid - 1])
-            //     hi = mid;
             else
-                // break;
                 hi = mid;
         }
         // lo = hi, not neccesirily = mid-1 or mid;
@@ -38,4 +36,16 @@ public:
         return nums[lo];
     }
 };
+
+// class Solution
+// {
+// public:
+//     int singleNonDuplicate(vector<int> &nums)
+//     {
+//         int n = nums.size();
+//         int res = nums[0];
+//         for (int i = 1; i<n; ++i) res ^= nums[i];  // 2^2 = 0;
+//         return res;
+//     }
+// };
 // @lc code=end
