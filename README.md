@@ -93,9 +93,9 @@ Here is a record of each problem, F represents "fail" at the first time submissi
  |  069  | 37. Sudoku Solver                                           |   F   |   P   |       |       |       |       |       |       |       |       |       |       |
  |  070  | 1926. Nearest Exit from Entrance in Maze                    |   P   |       |       |       |       |       |       |       |       |       |       |       |
  |  071  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
- |  072  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
- |  073  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
- |  074  |                                                             |       |       |       |       |       |       |       |       |       |       |       |       |
+ |  072  | 67. Add Binary                                              |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  073  | 66. Plus One                                                |   P   |       |       |       |       |       |       |       |       |       |       |       |
+ |  074  | 43. Multiply Strings                                        |   F   |       |       |       |       |       |       |       |       |       |       |       |
  
  
 
